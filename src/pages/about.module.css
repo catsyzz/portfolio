@@ -1,0 +1,44 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profileImage {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: floatIn 1.2s ease-out;
+}
+
+.bio {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #eee;
+}
+
+@keyframes floatIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

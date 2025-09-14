@@ -1,0 +1,166 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+  
+ @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Base Colors */
+  --ifm-background-color: #121212; /* Deep charcoal */
+  --ifm-navbar-background-color: linear-gradient(to right, #1A1A1A, #2A2A2A);
+  --ifm-footer-background-color: #1A1A1A;
+  --ifm-color-content: #DADADA; /* Soft light gray */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 0, 0.1);
+
+  /* Accent Colors (used sparingly) */
+  --heading-yellow: #E8E23A;
+  --heading-green: #6FAE5F;
+  --btn-muted: #2F2F2F;
+  --btn-hover: #444;
+}
+
+[data-theme='dark'] {
+  --ifm-background-color: #121212;
+  --ifm-navbar-background-color: linear-gradient(to right, #1A1A1A, #2A2A2A);
+  --ifm-footer-background-color: #1A1A1A;
+  --ifm-color-content: #DADADA;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 0, 0.2);
+
+  --heading-yellow: #E8E23A;
+  --heading-green: #6FAE5F;
+  --btn-muted: #2F2F2F;
+  --btn-hover: #444;
+}
+
+.navbar__title,
+.navbar__link {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.theme-blog-post-page h1,
+.theme-blog-post-page h2,
+.theme-blog-post-page h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--heading-yellow);
+}
+
+.theme-blog-post-page h1,
+.theme-blog-post-page h2,
+.theme-blog-post-page h3 {
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-image {
+  width: 250px;
+  border-radius: 50%;
+  animation: floatIn 1.2s ease-out;
+}
+
+@keyframes floatIn {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
+
+/* about me page */
+/* Banner styles */
+.name-banner {
+  background-color: #111;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 2px solid #00ffff;
+  animation: slideDown 0.8s ease-out;
+}
+
+.name-text {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+  color: #00ffff;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Layout styles */
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.image-stack {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.graffiti-bg {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 300px;
+  height: auto;
+  z-index: 1;
+  opacity: 0.6;
+  transform: rotate(-5deg);
+  animation: graffitiFade 1.2s ease-out;
+}
+
+.about-image {
+  position: relative;
+  z-index: 2;
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  animation: floatIn 1.2s ease-out;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  color: #eee;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes graffitiFade {
+  from { opacity: 0; transform: scale(0.9) rotate(-10deg); }
+  to { opacity: 0.6; transform: scale(1) rotate(-5deg); }
+}
+
+@keyframes floatIn {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
