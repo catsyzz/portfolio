@@ -5,7 +5,7 @@ authors: dom
 tags: []
 ---
 
-image of BLUD!
+hi guys
 
 <!-- truncate -->
 

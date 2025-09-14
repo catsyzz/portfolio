@@ -25,6 +25,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Portfolio',
   tagline: '',
+
   favicon: 'img/deweyd.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -33,16 +34,16 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://dlopez.me', // Your website URL
+  url: 'https://github.com', // Your website URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/portfolio/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  organizationName: 'catsyzz', // Usually your GitHub org/user name.
+  projectName: 'portfolio', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -87,21 +88,16 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/deweydd.png',
       navbar: {
         title: ' ',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Dom',
           src: 'img/deweydd.png',
         },
         items: [
 
           {to: '/blog', label: 'Projects', position: 'left'},
-          {
-            href: 'https://github.com/catsyzz',
-            label: 'GitHub',
-            position: 'right',
-          },
 
            {to: '/about-me', label: 'About Me', position: 'right'},
         ],
