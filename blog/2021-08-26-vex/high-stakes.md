@@ -2,7 +2,7 @@
 
 title: robottt
 authors: dom
-tags: [facebook, hello, docusaurus]
+tags: []
 ---
 
 image of BLUD!

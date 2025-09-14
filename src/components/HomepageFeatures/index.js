@@ -5,8 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   
  
- 
-];
+ ];
 
 function Feature({Svg, title, description}) {
   return (
