@@ -1,0 +1,272 @@
+---
+slug: high-stakes
+title: High Stake Robot Designs
+authors: dom
+tags: []
+---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+My collection of robot designs and iteration history throughout the 2024–2025 VRC High Stakes Season
+
+![High Stakes Robot](/img/highstakesscore.jpg)
+
+<!-- truncate -->
+
+---
+
+## TL;DR
+
+Here is the collection of iterations and robot designs throughout the season
+
+
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', marginTop: '2rem' }}>
+
+  <figure id="fig-1" style={{ margin: 0 }}>
+    <img src={require('./highstakesit1.jpg').default} alt="Iteration 1" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Figure 1 — First Iteration
+    </figcaption>
+  </figure>
+
+  <figure id="fig-2" style={{ margin: 0 }}>
+    <img src={require('./highstakesit2.jpg').default} alt="Iteration 2" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Figure 2 — Second Iteration
+    </figcaption>
+  </figure>
+
+  <figure id="fig-3" style={{ margin: 0 }}>
+    <img src={require('./highstakesit3.jpg').default} alt="Iteration 3" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Figure 3 — Third Iteration
+    </figcaption>
+  </figure>
+
+  <figure id="fig-4" style={{ margin: 0 }}>
+    <img src={require('./highstakesit4.jpg').default} alt="Iteration 4" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Figure 4 — Fourth Iteration
+    </figcaption>
+  </figure>
+
+  <figure id="fig-5" style={{ margin: 0 }}>
+    <img src={require('./highstakesit5.jpg').default} alt="Iteration 3" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Figure 5 — Fifth Iteration
+    </figcaption>
+  </figure>
+
+  <figure id="fig-6" style={{ margin: 0 }}>
+    <img src={require('./highstakesit6.jpg').default} alt="Iteration 4" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Figure 6 — Sixth Iteration
+    </figcaption>
+  </figure>
+
+</div>
+
+---
+
+# Intro to High Stakes
+
+This year’s competition challenge was centered around developing a robot capable of scoring rings, manipulating mobile goals around a field, and elevating itself at the end of a match.
+
+With this in mind, when analyzing the field, there is:
+
+- Forty-eight (48) Rings  
+- Five (5) Mobile Goals  
+- Four (4) Wall Stakes  
+- One (1) Ladder  
+
+![Field diagram](/img/highstakesfield.png)
+
+One side of the Field Perimeter is marked with:
+
+- Two (2) Positive Corners  
+- Two (2) Negative Corners  
+
+Points can be scored on any kind of **Stake** throughout the field using blue and red **Rings** placed throughout the field. Six (6) Rings can fit on any given stake (except Wall Stakes, which can only fit two).
+
+---
+
+## First Iteration V1.0
+
+[Google Photos Album](https://photos.app.goo.gl/LcjJyR2y14UPvnTc6)
+
+![First iteration robot placeholder](/img/highstakesit1.jpg)
+
+Early in the season, I began researching robot designs and identified four essential components:
+
+- An intake  
+- A clamp for mobile goals  
+- A mechanism to score on stakes other than mobile goals  
+- A method for elevation during the endgame  
+
+The first robot design I developed only featured two of these four goals. Due to time constraints, I accepted the trade-off and moved forward with a simplified build.
+
+# Drivetrain
+
+I decided to use a standard drivetrain speed of 480 RPM using a 36-48 (19:24) gear ratio on 2.75" omni wheels and an offset traction wheel. This was a drivetrain I was very comfortable using since it was similar to my [Spin Up](https://www.youtube.com) season drive train at worlds.
+
+![First Iteration Drivetrain](/img/highstakesit1dt.jpg)
+
+# Intake and Clamp Mechanism
+
+I decided to design a conveyer-style intake inspired by my previous experience in [Tipping Point](https://www.youtube.com) intaking rings, using "hooks" to grab onto each ring and flip them onto goals to score them.
+
+For the clamp mechanism, I was inspired by collaborating with [VURC Team OSCR](https://www.youtube.com/@theflyingcuber) in designing this clamp and implementing it onto the robot.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)', gap: '2rem', marginTop: '2rem' }}>
+
+  <figure id="gif-1" style={{ margin: 0 }}>
+    <img src={require('./highstakesit1clm.gif').default} alt="Iteration 1" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      CAD Design
+    </figcaption>
+  </figure>
+
+  <figure id="fig-2" style={{ margin: 0 }}>
+    <img src={require('./highstakesit1clm.jpg').default} alt="Iteration 2" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Implementation
+    </figcaption>
+  </figure>
+
+</div>
+
+
+Despite its limitations, this robot performed well in competition, earning qualifying awards and securing our placement at the state level early in the season.
+
+# V1.1
+
+After the first two competitions, we attempted to add a lift mechanism inspired by the [MJS Lift Mechanism](https://www.youtube.com/watch?v=cXMNPDNUUeU). The goal was to score on Wall Stakes and Alliance Stakes. Unfortunately, the design was only tested for two days before being scrapped in favor of planning the next iteration.
+
+![Lift attempt placeholder](/img/highstakesit2.jpg)
+
+
+finish talking about liftttttttttttttttttt hereeeeeee
+
+---
+
+## Second Iteration V2.0
+
+[Google Photos Album](https://photos.app.goo.gl/r3WCAA22tLft5pPe8)
+
+![Mechanism on robot placeholder](/img/highstakesit3.jpg)
+
+Our second iteration was one of our most successful builds, competing in three events. It achieved three out of the four original goals and introduced a new lift mechanism known as the ["Lady Brown" mechanism](https://www.youtube.com/shorts/0qKV4nqYBG8).
+
+# Lady Brown Mechanism
+
+Planning:
+
+- Wanted to use CAD to create correct geometry for loading and scoring  
+- Wanted to use minimal metal to reduce weight for competition robot  
+- Needed to be fast enough to...
+
+
+This mechanism was designed to intercept rings during intake and rotate them into scoring position on Wall Stakes. In order for this design to work, it neede to have correct geometry relative to the intake and the wall stake, because common issues we found while testing was the lift being able to grab the ring,  but not score it, or that it could score but not grab the rings. 
+
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem', marginTop: '2rem' }}>
+
+  <figure id="gif-1" style={{ margin: 0 }}>
+    <img src={require('./highstakesms.png').default} alt="Iteration 1" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Cad master sketch used to develop finalized design, featuring a ring path sketch and mock Wall Stakes to see positions relative to each other.
+    </figcaption>
+  </figure>
+
+  <figure id="fig-2" style={{ margin: 0 }}>
+    <img src={require('./highstakeslb.gif').default} alt="Iteration 2" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Implementation and showcase on Iteration V3.0
+    </figcaption>
+  </figure>
+
+  </div>
+
+
+
+The tuning and troubleshooting for this design focused on the plastic pieces and mesh that the mechanism used (shown below):
+
+![LB Mesh](/img/highstakeslbmesh.png)
+
+I came up with solutions using different amounts of mesh and rubber bands to dictate the "hold" of the arm. Throughout the season, we continued with this method for other iterations of the arm.
+
+# Improved Clamp
+
+When deciding to make changes for this design compared to **V1.0**, we realized the general idea of a locking clamp worked extremely well in competition. To reduce weight, we redesigned a sleeker clamp. The locking clamp helped secure mobile goals and supported our strategy of goal stealing.
+
+![Clamp image](/img/highstakesclamp1.jpg)
+
+To make the clamp lock, we opted to use an **over-centered joint** to ensure that the pistons pushing the mechanism would not fail to hold the goal even while scoring rings. Because of this decision, we were able to "out-clamp" other robots and actually steal goals from there, making us known for this kind of defensive play worldwide.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem', marginTop: '2rem' }}>
+
+  <figure id="gif-1" style={{ margin: 0 }}>
+    <img src={require('./goalsteal1.gif').default} alt="Iteration 1" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Stolen goal 1
+    </figcaption>
+  </figure>
+
+  <figure id="fig-2" style={{ margin: 0 }}>
+    <img src={require('./goalsteal2.gif').default} alt="Iteration 2" style={{ width: '100%' }} />
+    <figcaption style={{ textAlign: 'center', marginTop: '0.5rem', fontStyle: 'italic' }}>
+      Stolen Goal 2
+    </figcaption>
+  </figure>
+
+</div>
+
+---
+
+## Third Iteration V3.0
+
+[Google Photos Album](https://photos.app.goo.gl/RBLASxhf9kDQT6HdA)
+
+![Robot Iteration 3](./highstakesit4.jpg)
+
+For the fourth iteration of the robot, we wanted to optimize the build of the robot. The other two iterations have proven to be succesful in concept, all having a **clamp, intake, and lift** so I opted to do a complete overhaul fo the design to test out some new ideas, since we had a large gap before state championships
+
+# Design Challenges
+
+With this design I focused on redoing three main components:
+
+- The drive
+- The clamp
+- The lift
+
+# New Drivetrain
+
+For this new drive, we wanted to test a drive speed I was familiar with competing in the Over Under Season, having a 450 RPM drive speed on 3.25" wheels roughly coming out to ~8.1 Ft/s. This was a big increase in overall speed, but after studying other competitions and our own experience, we knew how great of a factor having manuverability throughout the field was so we opted to redesign to this speed. 
+
+
+
+
+# New Lady Brown
+
+After collaborating with some friends from other teams through a discord community I helped to manage (**Vex Learning Alliance**), we concluded that shifting out Lady Brown mechanism to not just have a limited rotation, which it currently did to maximize effectiveness on wall stakes, to instaed have a full 360 degree rotation for greater versatility. 
+
+This decision was based on the idea that we could:
+
+- Flip/unflip goals from opponents in matches
+- Score more effectively on wall Stakes
+- We could also score on the alliance stake without just using our intake.
+
+
+
+---
+
+## Fourth Iteration V4.0
+
+[This robot is included in the same folder as 3.0](https://photos.app.goo.gl/RBLASxhf9kDQT6HdA)
+
+
+---
+
+## Fifth Iteration V5.0
+
+[Google Photos Album](https://photos.app.goo.gl/LcjJyR2y14UPvnTc6)

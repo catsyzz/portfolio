@@ -37,6 +37,8 @@
   --btn-hover: #444;
 }
 
+/* Navbar and homepage setup */
+
 .navbar__title,
 .navbar__link {
   font-family: 'Permanent Marker', cursive;
@@ -78,6 +80,13 @@
   100% { transform: translateY(0); opacity: 1; }
 }
 
+
+
+/* Blog Posts Customization */
+.rounded-image {
+  border-radius: 12px; /* Adjust this value for more/less rounding */
+  overflow: hidden;
+}
 
 
 /* about me page */

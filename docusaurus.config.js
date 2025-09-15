@@ -34,7 +34,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://github.com', // Your website URL
+  url: 'https://catsyzz.github.io', // Your website URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/portfolio/',
@@ -44,6 +44,8 @@ const config = {
   organizationName: 'catsyzz', // Usually your GitHub org/user name.
   projectName: 'portfolio', // Usually your repo name.
   deploymentBranch: 'gh-pages',
+
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -64,6 +66,8 @@ const config = {
         blog: {
           routeBasePath: '/blog', // Serve the blog at the site's root
           showReadingTime: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -97,7 +101,7 @@ const config = {
         },
         items: [
 
-          {to: '/blog', label: 'Projects', position: 'left'},
+           {to: '/blog', label: 'Projects', position: 'left'},
 
            {to: '/about-me', label: 'About Me', position: 'right'},
         ],
@@ -106,20 +110,34 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+
+          {
+            title: 'Professional',
+            items: [
+              {
+                label: 'Resume',
+                href: 'https://acrobat.adobe.com/id/urn:aaid:sc:US:9f82895e-98bd-4c63-9978-9e8b0b9569f1',
+              },
+              {
+                label: 'CV',
+                href: 'https://acrobat.adobe.com/id/urn:aaid:sc:US:9f82895e-98bd-4c63-9978-9e8b0b9569f1',
+              },
+            ],
+          },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'LinkedIn',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/docusaurus',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Instagram',
+                href: 'https://instagram.com/catsyzz',
               },
             ],
           },
@@ -127,17 +145,14 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'About Me',
+                to: '/about-me',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      
+        copyright: `Copyright © Dominic Lopez ${new Date().getFullYear()}`,
       },
       prism: {
         theme: prismThemes.github,

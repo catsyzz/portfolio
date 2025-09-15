@@ -7,6 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -15,40 +16,40 @@ function HomepageHeader() {
   // Each project has a title, description, image, and link to its page.
   const projects = [
     {
-      title: 'DD-3',
-      description: 'placeholder',
-      imageUrl: '/img/deweydd.png', // 📸 Replace with your image path (place images in /static/img/)
-      link: '/blog/2021/08/26/vex/high-stakes',    // 🔗 Replace with the actual page you want to link to
+      title: 'High Stakes Designs',
+      // description: 'My robot designs for the High Stakes VEX competition season.',
+      imageUrl: '/img/highstakesbot.png', // 📸 Replace with your image path (place images in /static/img/)
+      link: '/blog/high-stakes',    // 🔗 Replace with the actual page you want to link to
     },
     {
-      title: 'The Pushbot',
-      description: 'palceholder',
-      imageUrl: '/img/deweydd.png',
-      link: '/projects/pushbot',
+      title: 'Notebook Progression',
+      // description: 'Progression of my engineering notebook over the years.',
+      imageUrl: '/img/notebookcover.png',
+      link: '/blog/notebook-progression',
     },
     {
-      title: 'placeholder',
-      description: 'placeholder.',
-      imageUrl: '/img/deweydd.png',
-      link: '/projects/supernova-awards',
+      title: 'Over Under Designs',
+      // description: ' ',
+      imageUrl: '/img/overunderbot.jpg',
+      link: '/blog/over-under',
     },
     {
-      title: 'placeholder',
-      description: 'placeholder',
-      imageUrl: '/img/deweydd.png',
-      link: '/projects/adaptive-pid',
+      title: 'USV Design',
+      // description: 'UCSD Autonomous Surface Vehicle design project.',
+      imageUrl: '/img/cosmosUSV.jpg',
+      link: '/blog/USV-design',
     },
     {
-      title: 'placeholder',
-      description: 'placeholder',
-      imageUrl: '/img/deweydd.png',
-      link: '/projects/ez-template',
+      title: 'Custom Plastic for VRC Robots',
+      // description: 'Documentation of custom plastic parts I designed for VRC robots.',
+      imageUrl: '/img/deweyd.png',
+      link: '/blog/custom-plastic',
     },
     {
-      title: 'placeholder',
-      description: 'placeholder',
-      imageUrl: '/img/deweydd.png',
-      link: '/projects/pure-pursuit',
+      title: 'E26 Labs',
+      // description: 'Collection of my projects from Engin26 Labs.',
+      imageUrl: '/static/img/deweydd.png',
+      link: '/blog/E26-labs',
     },
   ];
 
@@ -58,7 +59,7 @@ return (
     {/* 🚩 Full-width banner section */}
     <div className={styles.fullBanner}>
       <h2 className={styles.fullBannerText}>
-        <span className={styles.highlight}>DEWEY</span> ROBOTICS
+        <span className={styles.highlight}>DOMINIC </span> LOPEZ
       </h2>
     </div>
 

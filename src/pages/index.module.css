@@ -45,7 +45,7 @@
 /* 🖼️ Image styling with hover animation and size cap */
 .projectImage {
   width: 100%;
-  max-width: 300px; /* ✅ Cap image size so it doesn't overflow */
+  /* max-width: 1000px; ✅ Cap image size so it doesn't overflow */
   height: auto;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -62,7 +62,7 @@
 
 /* 🔗 Title link styling */
 .projectTitle {
-  color: #58a6ff;
+  color: #ff587c;
   text-decoration: none;
   font-size: 1.25rem;
 }
