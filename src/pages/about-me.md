@@ -31,15 +31,15 @@ import styles from './about.module.css';
   </div>
   <div class="about-text">
     <p>
-      I’m a Mechanical Engineering student at UC Berkeley, who loves goonign his shi everywhere
+      Hi I'm Dom, a Mechanical Engineering student at UC Berkeley, passionate of engineering and reasearch. I thrive at the intersections of mechanical application, robotics, and real-world impact. 
     </p>
     <p>
-      I need to write this
+      I love to work on things that move and that interact with the world in new ways :D
     </p>
     <p>
-      📧 <a href="mailto:catsyzz@berkeley.edu">Academic</a><br />
-      📬 <a href="mailto:dominicflopez413@email.com">Personal</a><br />
-      📱 <a href="tel:+16198695624">Text/Call me!</a>
+      📧 <a href="mailto:catsyzz@berkeley.edu">Academic: catsyzz@berkeley.edu</a><br />
+      📬 <a href="mailto:dominicflopez413@email.com">Personal: dominicflopez413@gmail.com</a><br />
+      📱 <a href="tel:+16198695624">Phone: +1 (619) 869-5624</a>
     </p>
   </div>
 </div>

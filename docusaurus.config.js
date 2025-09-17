@@ -6,17 +6,7 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-// setting up the plugin in case ts just stops fucking working
-// plugins: [
-//   [
-//     '@docusaurus/plugin-content-blog',
-//     {
-//       path: './blog',
-//       routeBasePath: 'blog',
-//       include: ['**/*.md', '**/*.mdx'],
-//     },
-//   ],
-// ];
+
 
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -64,7 +54,7 @@ const config = {
       ({
         docs: false,
         blog: {
-          routeBasePath: '/blog', // Serve the blog at the site's root
+          routeBasePath: '/projects', // Serve the blog at the site's root
           showReadingTime: true,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -97,11 +87,11 @@ const config = {
         title: ' ',
         logo: {
           alt: 'Dom',
-          src: 'img/deweydd.png',
+          src: '/img/deweydd.png',
         },
         items: [
 
-           {to: '/blog', label: 'Projects', position: 'left'},
+           {to: '/projects', label: 'Projects', position: 'left'},
 
            {to: '/about-me', label: 'About Me', position: 'right'},
         ],
