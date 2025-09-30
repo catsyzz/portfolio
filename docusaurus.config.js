@@ -6,7 +6,7 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-
+ 
 
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -33,6 +33,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'catsyzz', // Usually your GitHub org/user name.
   projectName: 'portfolio', // Usually your repo name.
+  trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
 
@@ -56,7 +57,7 @@ const config = {
         blog: {
           routeBasePath: '/projects', // Serve the blog at the site's root
           showReadingTime: true,
-          showLastUpdateAuthor: true,
+          //showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
