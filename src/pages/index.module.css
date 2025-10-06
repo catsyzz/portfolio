@@ -24,153 +24,53 @@
   justify-content: center;
 }
 
+.splitSection {
+  padding: 4rem 2rem;
+  background-color: #111;
+  color: #f5f5f5;
+}
 
-/* 🧱 Force a 3-column grid layout */
-.projectGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+.splitContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* 📦 Individual card styling */
-.projectCard {
-  background-color: #1c1c1e;
-  padding: 1rem;
-  border-radius: 8px;
+.splitBox {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
   text-align: center;
-  transition: transform 0.2s ease;
 }
 
-/* 🖼️ Image styling with hover animation and size cap */
-.projectImage {
-  width: 100%;
-  /* max-width: 1000px; ✅ Cap image size so it doesn't overflow */
-  height: auto;
-  border-radius: 6px;
+.splitTitle {
+  font-size: 2rem;
   margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: 'Orbitron', sans-serif;
 }
 
-/* 🖱️ Hover effect to slightly enlarge image */
-.projectImage:hover {
-  transform: scale(1.05);
+.splitDescription {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
-/* 🔗 Title link styling */
-.projectTitle {
-  color: #ff587c;
+.splitButton {
+  background-color: #ff5c5c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
   text-decoration: none;
-  font-size: 1.25rem;
-}
-
-.projectTitle:hover {
-  text-decoration: underline;
-}
-
-/* 📝 Description text styling */
-.projectDescription {
-  color: #d1d1d1;
-  font-size: 0.95rem;
-}
-
-/* 📱 Responsive fallback for smaller screens */
-@media screen and (max-width: 900px) {
-  .projectGrid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .projectGrid {
-    grid-template-columns: 1fr; /* 1 column on phones */
-  }
-}
-
-
-/* 🎬 Initial hidden state for animation */
-.projectCard {
-  background-color: #1c1c1e;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s ease, opacity 0.6s ease;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlideUp 0.6s ease forwards;
-}
-
-/* 🖱️ Hover effect on the entire card */
-.projectCard:hover {
-  transform: scale(1.03);
-}
-
-/* 🖼️ Image hover stays the same */
-.projectImage {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.projectImage:hover {
-  transform: scale(1.05);
-}
-
-/* 🎞️ Keyframes for fade-in + slide-up */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-/* 🚩 Full-width banner styling */
-.fullBanner {
-  width: 100vw; /* ✅ Full viewport width */
-  background-color: #000; /* Black background for contrast */
-  padding: 2rem 0;
-  margin: 3rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* 🚩 Full-width banner styling */
-.fullBanner {
-  width: 100vw; /* Full screen width */
-  background-color: #1a1a1a; /* Dark charcoal tone to match your theme */
-  padding: 2rem 0;
-  margin: 3rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 2px solid #333; /* Optional subtle divider */
-  border-bottom: 2px solid #333;
-}
-
-/* 🏷️ Banner text styling */
-.fullBannerText {
-  font-size: 2.5rem;
   font-weight: bold;
-  color: #f5f5f5; /* Light gray for contrast */
-  margin: 0;
-  letter-spacing: 1px;
+  transition: background 0.3s ease;
 }
 
-/* 🎨 Accent word styling (now matching your theme) */
-.highlight {
-  color: #58a6ff; /* Your existing accent blue */
+.splitButton:hover {
+  background-color: #ff2e2e;
 }

@@ -13,7 +13,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Portfolio',
+  title: "Dom's Portfolio",
   tagline: '',
 
   favicon: 'img/deweyd.ico',
@@ -27,12 +27,12 @@ const config = {
   url: 'https://catsyzz.github.io', // Your website URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/portfolio/',
+  baseUrl: '',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'catsyzz', // Usually your GitHub org/user name.
-  projectName: 'portfolio', // Usually your repo name.
+  projectName: '', // Usually your repo name.
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
@@ -55,7 +55,7 @@ const config = {
       ({
         docs: false,
         blog: {
-          routeBasePath: '/projects', // Serve the blog at the site's root
+          routeBasePath: '/design-processes', // Serve the blog at the site's root
           showReadingTime: true,
           //showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -83,7 +83,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/deweydd.png',
+      image: '/deweydd.png',
       navbar: {
         title: ' ',
         logo: {
@@ -94,54 +94,56 @@ const config = {
 
            {to: '/projects', label: 'Projects', position: 'left'},
 
+           {to :'/design-processes', label: 'Design Processes', position: 'left'},
+
            {to: '/about-me', label: 'About Me', position: 'right'},
         ],
       },
 
       footer: {
-        style: 'dark',
-        links: [
+        // style: 'dark',
+        // links: [
 
-          {
-            title: 'Professional',
-            items: [
-              {
-                label: 'Resume',
-                href: 'https://acrobat.adobe.com/id/urn:aaid:sc:US:9f82895e-98bd-4c63-9978-9e8b0b9569f1',
-              },
-              {
-                label: 'CV',
-                href: 'https://acrobat.adobe.com/id/urn:aaid:sc:US:9f82895e-98bd-4c63-9978-9e8b0b9569f1',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'LinkedIn',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/docusaurus',
-              },
-              {
-                label: 'Instagram',
-                href: 'https://instagram.com/catsyzz',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'About Me',
-                to: '/about-me',
-              },
-            ],
-          },
-        ],
+        //   {
+        //     title: 'Professional',
+        //     items: [
+        //       {
+        //         label: 'Resume',
+        //         href: 'MechE_Reume_Dominic_Lopez.pdf',
+        //       },
+        //       {
+        //         label: 'CV',
+        //         href: 'MechE_Reume_Dominic_Lopez.pdf',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: 'Community',
+        //     items: [
+        //       {
+        //         label: 'LinkedIn',
+        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        //       },
+        //       {
+        //         label: 'Discord',
+        //         href: 'https://discord.gg/docusaurus',
+        //       },
+        //       {
+        //         label: 'Instagram',
+        //         href: 'https://instagram.com/catsyzz',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: 'More',
+        //     items: [
+        //       {
+        //         label: 'About Me',
+        //         to: '/about-me',
+        //       },
+        //     ],
+        //   },
+        // ],
       
         copyright: `Copyright © Dominic Lopez ${new Date().getFullYear()}`,
       },
