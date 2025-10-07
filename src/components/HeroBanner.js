@@ -8,7 +8,7 @@ export default function HeroBanner() {
       <section className={styles.heroIntro}>
         <div className={styles.container}>
           <div className={styles.imageBox}>
-            <img src="url(/img/Dom_SCORE_Finals.jpg)" alt="Dom" className={styles.profileImage} />
+            <img src="https://github.com/catsyzz.png" alt="Dom" className={styles.profileImage} />
           </div>
           <div className={styles.textBox}>
             <h1 className={styles.title}>Hi, I'm Dom</h1>
