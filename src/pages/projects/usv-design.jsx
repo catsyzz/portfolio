@@ -20,20 +20,19 @@ export default function ASVSummary() {
         </div>
 
         {/* CAD viewer placeholder (replace src with your modelo/embed link) */}
-       <div className={styles.modeloWrapper}>
+            <div className={styles.modeloWrapper}>
         <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}>
             <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
             <iframe
-                src="https://www.modelo.io/embedded/1978015276099473408?viewport=false&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false"
-                title="Modelo / 3D CAD"
+                src="https://www.modelo.io/embedded/1978199812340015104?viewport=false&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false"
+                style={{ width: '100%', height: '100%' }}
                 frameBorder="0"
                 allowFullScreen
-                style={{ width: '100%', height: '100%', border: 0 }}
+                title="Modelo / 3D CAD"
             />
             </div>
         </div>
         </div>
-
         <p className={styles.modeloCaption}>
           <em>Baseplate I designed to house all electronics for the USV</em>
         </p>

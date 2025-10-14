@@ -24,10 +24,10 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://catsyzz.github.io', // Your website URL
+  url: 'https://catsyzz.me', // Your website URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/portfolio/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -102,7 +102,7 @@ const config = {
 
       footer: {
         
-        copyright: `Copyright © Dominic Lopez ${new Date().getFullYear()}`,
+        copyright: `© Dominic Lopez ${new Date().getFullYear()}`,
       },
       prism: {
         theme: prismThemes.github,

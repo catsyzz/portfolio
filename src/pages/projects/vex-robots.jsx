@@ -20,14 +20,13 @@ export default function vexRobots() {
         <div className={styles.modeloWrapper}>
           <div className={styles.modeloContainer}>
             <iframe
-              src="https://www.modelo.io/embedded/1977931214094688256?viewport=false&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false"
+              src="https://www.modelo.io/embedded/1978200423860047872?viewport=true&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false&c_at0=-23.538842247558595&c_at1=121.10949225561524&c_at2=25.159453345703124&c_theta=-1.5734649108683605&c_phi=1.5393804002589986&c_dis=894.7856815552586"
               title="Modelo Viewer"
               frameBorder="0"
               allowFullScreen
               className={styles.modeloIframe}
             />
           </div>
-         
         </div>
          <p className={styles.modeloCaption}>
         <em>Example of a fully designed CAD robot I designed using Inventor</em>
