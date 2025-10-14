@@ -5,20 +5,33 @@ export default function HeroBanner() {
   return (
     <>
       {/* Intro Section */}
-      <section className={styles.heroIntro}>
+      <section className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.imageBox}>
-            <img src="https://github.com/catsyzz.png" alt="Dom" className={styles.profileImage} />
+            <img
+              src="https://github.com/catsyzz.png"
+              alt="Dom"
+              className={styles.profileImage}
+            />
           </div>
           <div className={styles.textBox}>
-            <h1 className={styles.title}>Hi, I'm Dom</h1>
+            <h1 className={styles.title}>Hi, I'm Dom {'\u207D^ >⩊< ^\u207EⳊ'}</h1>
             <p className={styles.description}>
-              Mechanical Engineering student passionate about merging technical rigor with bold creative expression.
-              Welcome to my portfolio.
+              I'm a Mechanical Engineering student passionate about merging technical rigor with bold creative expression.
+            </p>
+            <p className={styles.description}> 
+             𓆝 𓆟 𓆞 𓆝 𓆟 Welcome to my portfolio 𓆝 𓆟 𓆞 𓆝 𓆟
             </p>
             <div className={styles.buttons}>
-              <a href="files/resume.pdf" className={styles.button}>Resume</a>
-              <a href="https://www.linkedin.com/in/dominic-lopez-39715527a/" className={styles.button} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="files/resume.pdf" className={styles.button}>📄 Resume</a>
+              <a
+                href="https://www.linkedin.com/in/dominic-lopez-39715527a/"
+                className={styles.button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🔗 LinkedIn
+              </a>
             </div>
             <div className={styles.emails}>
               <p><strong>Personal:</strong> dominiclopez413@gmail.com</p>
@@ -28,10 +41,14 @@ export default function HeroBanner() {
         </div>
       </section>
 
-      <section className={styles.heroLinks}>
+      {/* Projects & About Me Section */}
+      <section className={styles.projectsAboutWrapper}>
         <div className={styles.splitLinks}>
           <a href="/projects" className={styles.splitCard}>
-            <div className={styles.cardImage} style={{ backgroundImage: 'url(/img/projects.jpg)' }} />
+            <div
+              className={styles.cardImage}
+              style={{ backgroundImage: 'url(/img/projects.jpg)' }}
+            />
             <div className={styles.cardOverlay}>
               <h2 className={styles.cardTitle}>Projects</h2>
               <p className={styles.cardText}>
@@ -40,16 +57,21 @@ export default function HeroBanner() {
             </div>
           </a>
 
-          <a href="/portfolio/about-me" className={styles.splitCard}>
-            <div className={styles.cardImage} style={{ backgroundImage: 'url(/img/aboutme.jpg)' }} />
+          <a href="/about-me" className={styles.splitCard}>
+            <div
+              className={styles.cardImage}
+              style={{ backgroundImage: 'url(/img/aboutme.jpg)' }}
+            />
             <div className={styles.cardOverlay}>
-
               <h2 className={styles.cardTitle}>About Me</h2>
               <p className={styles.cardText}>
                 Learn about my background, skills, awards, and experience in robotics, mechanical design, and creative engineering.
               </p>
             </div>
           </a>
+           <div>
+          <p> </p>
+           </div>
         </div>
       </section>
     </>

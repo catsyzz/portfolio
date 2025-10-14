@@ -1,0 +1,190 @@
+/* Page container with outer margins and subtle outer border */
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 96px; /* ~1in side margins */
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid #ff4f4f;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(10,10,10,0.98) 0%, rgba(6,6,6,0.96) 100%);
+}
+
+/* Title */
+.heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  color: #ff0055;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Short intro / poster subtitle */
+.bio {
+  font-size: 1.05rem;
+  color: #cfcfcf;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+/* Centered summary block (single-column, glowing) */
+.centeredBlock {
+  background-color: #0b0b0b;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  box-shadow: 0 0 14px #ff4f4f;
+  text-align: center;
+}
+
+/* Inner text for centered summary */
+.sectionText {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #dedede;
+  margin: 0;
+}
+
+/* Modelo / CAD viewer area */
+.modeloWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.modeloContainer {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.12);
+  background: #070707;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modeloIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Caption beneath CAD */
+.modeloCaption {
+  text-align: center;
+  font-size: 0.98rem;
+  color: #bfc0c0;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* Progress images row */
+.progressRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.progressCard {
+  background: linear-gradient(180deg, #0b0b0b 0%, #0a0a0a 100%);
+  border-radius: 10px;
+  padding: 0.75rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.progressImagePlaceholder {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(120,120,120,0.08), rgba(80,80,80,0.06));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Grid Section containing the three left-aligned blocks */
+.gridSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Glowing block for the three columns (left-aligned content) */
+.gridBlock {
+  background-color: transparent; /* older style: no inner border, transparent so outer container provides margin */
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.2s ease;
+  text-align: left;
+}
+
+/* Visual card inside gridBlock (keeps the glowing look but without an inner border) */
+.gridBlockInner {
+  background-color: #0b0b0b;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.08);
+  height: 100%;
+}
+
+/* Subheading and list text */
+.subheading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.15rem;
+  color: #ff4f4f;
+  margin: 0 0 0.5rem 0;
+}
+
+.listText {
+  font-size: 1rem;
+  color: #d6d6d6;
+  line-height: 1.6;
+}
+
+/* Collaborators list small tweak */
+.collabList {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+/* Utilities */
+.smallMuted {
+  font-size: 0.9rem;
+  color: #9ea0a0;
+}
+
+.pdfWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.12);
+  background-color: #0b0b0b;
+}
+
+.pdfViewer {
+  width: 100%;
+  height: 720px;
+  border: none;
+}

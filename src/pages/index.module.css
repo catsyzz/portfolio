@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .splitSection {
@@ -58,6 +59,7 @@
 .splitDescription {
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
   line-height: 1.6;
 }
 
@@ -68,6 +70,7 @@
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
   transition: background 0.3s ease;
 }
 

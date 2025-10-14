@@ -1,0 +1,96 @@
+import React, { useState } from 'react';
+import Layout from '@theme/Layout';
+import styles from './ghModding.module.css';
+import Link from '@docusaurus/Link';
+
+
+
+export default function GhModding() {
+  const [modalImage, setModalImage] = useState(null);
+  const openModal = (src) => setModalImage(src);
+  const closeModal = () => setModalImage(null);
+
+  return (
+         <Layout title="Guitar Hero Modding">
+  {/* // <div className={styles.backButtonFixed}>
+  //   <Link to="/projects" className={styles.backButton}>
+  //     ← Back to Projects
+  //   </Link>
+  // </div> */}
+  <div className={styles.container}>
+    {/* your content */}
+        <h1 className={styles.heading}>Guitar Hero Fret Buttons Mod</h1>
+        <p>Mod my guitar hero controller with me!</p>
+        <img src="/img/gh1.jpg" alt="Guitar Hero Mod Intro" className={styles.image} onClick={() => openModal("/img/gh1.jpg")} />
+
+        <p className={styles.description}>
+          This is a mod that will make the fret buttons on your guitar hero controller firmer and more responsive. You get less of that clicking / rattling sound you get when you're playing fast, and it requires less downward pressure to fret a note.
+        </p>
+
+        <h2>You will need:</h2>
+        <ul>
+          <li>Guitar Hero controller</li>
+          <li>Small philips screwdriver</li>
+          <li>Large-ish flat screwdriver</li>
+          <li>Duct tape (I used painters tape)</li>
+          <li>Scissors</li>
+        </ul>
+        <p>This idea originally is not originally mine, but the applications I used were different than most guides so I am including it here :)</p>
+
+        <h2>Step 1: Remove All Screws in the Guitar Neck</h2>
+        <img src="/img/ghs1.jpg" alt="Step 1" className={styles.image} onClick={() => openModal("/img/ghs1.jpg")} />
+        <p>After removing the neck from the guitar body, remove all the screws from it (excluding the one holding on the strap button, unless you don't use it, and want to remove it - I did here).</p>
+
+        <h2>Step 2: Open Neck and Dismantle Fret Button Assembly</h2>
+        <div className={styles.grid}>
+          <figure>
+            <img src="/img/ghs2.jpg" alt="Circuit Board Removal" className={styles.gridImage} onClick={() => openModal("/img/ghs2.jpg")} />
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="/img/ghs3.jpg" alt="Button Assembly" className={styles.gridImage} onClick={() => openModal("/img/ghs3.jpg")} />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <p>First, remove the two screws holding the brown circuit board down, using a small philips screwdriver. Carefully lift the circuit board and set it aside. Be particularly careful not to trap or fold the ribbon cable at any point as it's quite delicate. Remove the rubber pad from the buttons, and set it aside - this will reveal the fret buttons. You can now remove these too.</p>
+
+        <h2>Step 3: Make Your Spacers</h2>
+        <div className={styles.grid}>
+          <figure>
+            <img src="/img/ghs4.jpg" alt="Spacer Tape" className={styles.gridImage} onClick={() => openModal("/img/ghs4.jpg")} />
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="/img/ghs5.jpg" alt="Spacer Pieces" className={styles.gridImage} onClick={() => openModal("/img/ghs5.jpg")} />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <p>Start by sticking two pieces of duct tape together, adhesive sides facing each other. This is what the spacers are made out of. Personally I found 2 layers of tape was perfect, but if you feel more is needed (or you are using tape of a different thickness) then use more or fewer layers. Cut strips of the tape that are 1.5cm wide. Then cut these every 2cm until you get 5 pieces of tape that measure 1.5 x 2cm. Lay each one on a button to make sure that you're cutting was accurate, and there are no overlaps.</p>
+
+        <h2>Step 4: Attach Spacers</h2>
+        <div className={styles.grid}>
+          <figure>
+            <img src="/img/ghs6.jpg" alt="Spacer Attachment" className={styles.gridImage} onClick={() => openModal("/img/ghs6.jpg")} />
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img src="/img/ghs7.jpg" alt="Spacer Setup" className={styles.gridImage} onClick={() => openModal("/img/ghs7.jpg")} />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <p>Make 5 small balls of your blu-tack (or equivalent, I used folded tape). Don't make these too big as too much will make the spacer's surface uneven. Roll one small section of tape between your fingers to make a sausage shape, and press it along the center line and 2 holes in the plastic on the back of one of the fret buttons. Then attach a spacer to this, ensuring it is central to the button and not overlapping the sides at all. Do this for all five buttons.</p>
+
+        <h2>Step 5: Reassemble the Fret Button Assembly</h2>
+        <img src="/img/ghs8.jpg" alt="Buttons with Spacer" className={styles.image} onClick={() => openModal("/img/ghs8.jpg")} />
+        <p>Place the fret buttons back into the neck, in the correct order: green, red, yellow, blue, orange. Lay the blue rubber piece over the buttons, pressing it into place. Line up the circuit board and gently press each end to get the plastic screw posts through the holes in the circuit board. Then put the screws you removed earlier back in.</p>
+        <img src="/img/ghs9.jpg" alt="Back Tape Reinforcement" className={styles.image} onClick={() => openModal("/img/ghs9.jpg")} />
+        <p>To make the buttons firmer still, add a length of duct tape (torn to a smaller width) to the back of the circuit board as seen in the picture.</p>
+
+        <h2>Step 6: Reassemble Guitar</h2>
+        <img src="/img/ghtest.gif" alt="Final Test" className={styles.image} onClick={() => openModal("/img/ghtest.gif")} />
+        <p>Replace the rear half of the neck, ensuring that the ribbon cable doesn't get trapped between the screw posts. Put all 9 screws back in using the Torx screwdriver. Reattach the neck to the guitar, and test it to make sure everything works. Enjoy!</p>
+
+         </div>
+    </Layout>
+  );
+}

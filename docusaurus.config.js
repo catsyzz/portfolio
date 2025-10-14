@@ -94,57 +94,14 @@ const config = {
 
            {to: '/projects', label: 'Projects', position: 'left'},
 
-           {to :'/design-processes', label: 'Design Processes', position: 'left'},
+          //  {to :'/design-processes', label: 'Design Processes', position: 'left'},
 
-           {to: '/about-me', label: 'About Me', position: 'right'},
+           {to: '/about-me', label: 'About Me', position: 'left'},
         ],
       },
 
       footer: {
-        // style: 'dark',
-        // links: [
-
-        //   {
-        //     title: 'Professional',
-        //     items: [
-        //       {
-        //         label: 'Resume',
-        //         href: 'MechE_Reume_Dominic_Lopez.pdf',
-        //       },
-        //       {
-        //         label: 'CV',
-        //         href: 'MechE_Reume_Dominic_Lopez.pdf',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'LinkedIn',
-        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //       },
-        //       {
-        //         label: 'Discord',
-        //         href: 'https://discord.gg/docusaurus',
-        //       },
-        //       {
-        //         label: 'Instagram',
-        //         href: 'https://instagram.com/catsyzz',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       {
-        //         label: 'About Me',
-        //         to: '/about-me',
-        //       },
-        //     ],
-        //   },
-        // ],
-      
+        
         copyright: `Copyright © Dominic Lopez ${new Date().getFullYear()}`,
       },
       prism: {

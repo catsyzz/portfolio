@@ -1,169 +1,142 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-  
- @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  /* Base Colors */
-  --ifm-background-color: #121212; /* Deep charcoal */
+  --accent: #ff4f4f;
+  --glow: rgba(255, 79, 79, 0.6);
+  --bg-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-light: #f0f0f0;
+  --text-muted: #999;
+
+  --ifm-background-color: var(--bg-dark);
   --ifm-navbar-background-color: linear-gradient(to right, #1A1A1A, #2A2A2A);
   --ifm-footer-background-color: #1A1A1A;
-  --ifm-color-content: #DADADA; /* Soft light gray */
+  --ifm-color-content: var(--text-light);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 0, 0.1);
-
-  /* Accent Colors (used sparingly) */
-  --heading-yellow: #E8E23A;
-  --heading-green: #6FAE5F;
-  --btn-muted: #2F2F2F;
-  --btn-hover: #444;
 }
 
-[data-theme='dark'] {
-  --ifm-background-color: #121212;
-  --ifm-navbar-background-color: linear-gradient(to right, #1A1A1A, #2A2A2A);
-  --ifm-footer-background-color: #1A1A1A;
-  --ifm-color-content: #DADADA;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 0, 0.2);
-
-  --heading-yellow: #E8E23A;
-  --heading-green: #6FAE5F;
-  --btn-muted: #2F2F2F;
-  --btn-hover: #444;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
 }
 
-/* Navbar and homepage setup */
-
+/* Navbar */
 .navbar__title,
 .navbar__link {
-  font-family: 'Permanent Marker', cursive;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
-
-.theme-blog-post-page h1,
-.theme-blog-post-page h2,
-.theme-blog-post-page h3 {
   font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--heading-yellow);
+  color: var(--accent); /* Optional: unify with glowing red theme */
+  text-shadow: 0 0 8px var(--glow); /* Optional: add glow effect */
 }
 
-.theme-blog-post-page h1,
-.theme-blog-post-page h2,
-.theme-blog-post-page h3 {
+.navbar__link--active {
+  color: #ffffff !important; /* White text */
+  text-shadow:
+    0 0 6px var(--glow),     /* Soft red glow */
+    0 0 12px var(--glow),    /* Stronger red glow */
+    0 0 18px var(--glow);    /* Extended red glow */
+  font-weight: 800;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--glow);
+  text-transform: uppercase;
   transition: color 0.3s ease, font-size 0.3s ease;
 }
 
-.about-container {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.about-image {
-  width: 250px;
-  border-radius: 50%;
-  animation: floatIn 1.2s ease-out;
-}
-
-@keyframes floatIn {
-  0% { transform: translateY(30px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
-}
-
-
-
-/* Blog Posts Customization */
-.rounded-image {
-  border-radius: 12px; /* Adjust this value for more/less rounding */
-  overflow: hidden;
-}
-
-
-/* about me page */
-/* Banner styles */
-.name-banner {
-  background-color: #111;
-  padding: 2rem 0;
-  text-align: center;
-  border-bottom: 2px solid #00ffff;
-  animation: slideDown 0.8s ease-out;
-}
-
-.name-text {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 4rem;
-  color: #00ffff;
-  letter-spacing: 2px;
-  margin: 0;
-}
-
-/* Layout styles */
-.about-wrapper {
+/* Layout */
+.pageWrapper, .about-wrapper {
+  padding: 3rem 2rem;
+  padding-bottom: 6rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 3rem;
+  background-color: var(--bg-dark);
   animation: fadeIn 1s ease-in-out;
 }
 
-.image-stack {
-  position: relative;
-  width: 250px;
-  height: 250px;
-}
-
-.graffiti-bg {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 300px;
-  height: auto;
-  z-index: 1;
-  opacity: 0.6;
-  transform: rotate(-5deg);
-  animation: graffitiFade 1.2s ease-out;
-}
-
-.about-image {
-  position: relative;
-  z-index: 2;
-  width: 250px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-  animation: floatIn 1.2s ease-out;
-}
-
-.about-text {
-  flex: 1;
+.leftColumn, .about-text {
+  flex: 2;
   max-width: 600px;
-  color: #eee;
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
+.rightColumn {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+/* Image */
+.about-image, .profileImage {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--glow);
+  animation: floatIn 1.2s ease-out;
+}
+
+/* Buttons */
+.actionButton {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--glow);
+}
+
+.actionButton:hover {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  box-shadow: 0 0 20px var(--glow);
+  transform: scale(1.05);
+}
+
+/* Skills */
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.skillItem {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-light);
+  background-color: var(--card-bg);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  box-shadow: 0 0 8px var(--glow);
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+
+.skillItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--glow);
+}
+
 /* Animations */
-@keyframes slideDown {
-  from { transform: translateY(-30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes graffitiFade {
-  from { opacity: 0; transform: scale(0.9) rotate(-10deg); }
-  to { opacity: 0.6; transform: scale(1) rotate(-5deg); }
-}
-
 @keyframes floatIn {
   0% { transform: translateY(30px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }

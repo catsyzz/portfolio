@@ -1,44 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
 
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  gap: 2rem;
-  animation: fadeIn 1s ease-in-out;
+:root {
+  --accent: #ff4f4f;
+  --bg-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-light: #f0f0f0;
+  --text-muted: #999;
+  --glow: rgba(255, 79, 79, 0.6);
 }
 
-.profileImage {
-  width: 250px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-  animation: floatIn 1.2s ease-out;
+.pageWrapper {
+  padding: 3rem 2rem;
+  padding-bottom: 6rem; /* 👈 Adds space above footer */
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.leftColumn {
+  flex: 2;
+  max-width: 600px;
+}
+
+.rightColumn {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px var(--glow);
+}
+
+.subheading {
+  font-size: 1.3rem;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 6px var(--glow);
 }
 
 .bio {
-  max-width: 600px;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #eee;
+  margin-bottom: 1rem;
 }
 
-@keyframes floatIn {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.skillsSection {
+  margin-top: 2rem;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.skillItem {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-light);
+  background-color: var(--card-bg);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  box-shadow: 0 0 8px var(--glow);
+  white-space: nowrap;
+  transition: transform 0.2s ease;
+}
+
+.skillItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--glow);
+}
+
+.profileImage {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--glow);
+}
+
+.location {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.actionButton {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--glow);
+}
+
+.actionButton:hover {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  box-shadow: 0 0 20px var(--glow);
+  transform: scale(1.05);
+}
+
+/* Resume Section */
+.sectionDivider {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, var(--accent), #ff9f4f);
+  border: none;
+  margin: 4rem 0 2rem;
+  box-shadow: 0 0 20px var(--glow);
+  border-radius: 4px;
+}
+
+.resumeSection {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resumeHeading {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 0 10px var(--glow);
+}
+
+.resumeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.resumeColumn {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.resumeBlock {
+  margin-bottom: 2rem;
+}
+
+.resumeSubheading {
+  font-size: 1.4rem;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px var(--glow);
+}
+
+.timelineList,
+.awardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timelineList li,
+.awardList li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .resumeGrid {
+    flex-direction: column;
   }
 }
