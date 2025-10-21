@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  padding: 1rem;
+  gap: 0;
+}
+
+.sidebar {
+  width: 50%;
+  padding: 1rem;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sidebar li {
+  margin-bottom: 1.5rem;
+}
+
+.viewer {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}

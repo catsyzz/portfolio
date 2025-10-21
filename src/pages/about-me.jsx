@@ -73,11 +73,11 @@ export default function AboutMePage() {
 
             <div className={styles.buttonGroup}>
               <a href="https://www.linkedin.com/in/dominic-lopez-39715527a/" target="_blank" rel="noopener noreferrer" className={styles.actionButton}>🔗 LinkedIn</a>
-              <a href="/files/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.actionButton}>📄 Resume</a>
-              <a href="mailto:catsyzz@berkeley.edu" className={styles.actionButton}>📧 Academic Email</a>
-              <a href="mailto:dominicflopez413@gmail.com" className={styles.actionButton}>📬 Personal Email</a>
+              <a href="./resume" className={styles.actionButton}>📄 Resume</a>
+              <a href="mailto:catsyzz@berkeley.edu" className={styles.actionButton}>📧 Academic Email: catsyzz@berkeley.edu</a>
+              <a href="mailto:dominicflopez413@gmail.com" className={styles.actionButton}>📬 Personal Email: dominicflopez413@gmail.com</a>
               <a href="tel:+16198695624" className={styles.actionButton}>
-              📱 Call Me (if you really want to I guess)
+              📱 Call Me +1(619) 869- 5624 (if you really want to I guess)
             </a>
             </div>
           </div>

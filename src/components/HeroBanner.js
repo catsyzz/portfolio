@@ -23,7 +23,7 @@ export default function HeroBanner() {
              𓆝 𓆟 𓆞 𓆝 𓆟 Welcome to my portfolio 𓆝 𓆟 𓆞 𓆝 𓆟
             </p>
             <div className={styles.buttons}>
-              <a href="files/resume.pdf" className={styles.button}>📄 Resume</a>
+              <a href="./resume" className={styles.button}>📄 Resume</a>
               <a
                 href="https://www.linkedin.com/in/dominic-lopez-39715527a/"
                 className={styles.button}
@@ -44,7 +44,7 @@ export default function HeroBanner() {
       {/* Projects & About Me Section */}
       <section className={styles.projectsAboutWrapper}>
         <div className={styles.splitLinks}>
-          <a href="/projects" className={styles.splitCard}>
+          <a href="./projects" className={styles.splitCard}>
             <div
               className={styles.cardImage}
               style={{ backgroundImage: 'url(/img/projects.jpg)' }}
@@ -57,7 +57,7 @@ export default function HeroBanner() {
             </div>
           </a>
 
-          <a href="/about-me" className={styles.splitCard}>
+          <a href="./about-me" className={styles.splitCard}>
             <div
               className={styles.cardImage}
               style={{ backgroundImage: 'url(/img/aboutme.jpg)' }}
