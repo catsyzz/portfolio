@@ -6,11 +6,8 @@ export default function AboutMePage() {
   const skills = [
   // Software & Programming
   'Autodesk Inventor',
-  'C++',
   'Fusion 360',
   'Onshape',
-  'Python',
-  'React',
   'RobotC',
   'SOLIDWORKS',
 
@@ -18,13 +15,11 @@ export default function AboutMePage() {
   'Arduino',
   'CNC',
   'FDM 3D Printing',
+  'SLA 3D Printing',
   'Hand Tools',
   'Laser-cutter',
   'Power tools',
-  'Raspberry Pi',
-  'SLA 3D Printing',
-  'Soldering',
-
+  
   // Skills & Processes
   'Fabrication',
   'Rapid Prototyping',
@@ -91,15 +86,14 @@ export default function AboutMePage() {
 
        {/* Divider */}
 <hr className={styles.sectionDivider} />
+{/* 
 
-{/* Resume Summary Section */}
 <section className={styles.resumeSection}>
   <h2 className={styles.resumeHeading}>Professional Summary</h2>
 
   <div className={styles.resumeGrid}>
-    {/* Left Column */}
     <div className={styles.resumeColumn}>
-      {/* Education */}
+     
       <div className={styles.resumeBlock}>
         <h3 className={styles.resumeSubheading}>🎓 Education</h3>
         <ul className={styles.resumeList}>
@@ -108,7 +102,7 @@ export default function AboutMePage() {
         </ul>
       </div>
 
-      {/* Research & Projects */}
+      
       <div className={styles.resumeBlock}>
         <h3 className={styles.resumeSubheading}>🔬 Research</h3>
         <ul className={styles.resumeList}>
@@ -117,9 +111,9 @@ export default function AboutMePage() {
       </div>
     </div>
 
-    {/* Right Column */}
+ 
     <div className={styles.resumeColumn}>
-      {/* Experience */}
+    
       <div className={styles.resumeBlock}>
         <h3 className={styles.resumeSubheading}>🛠 Experience</h3>
         <ul className={styles.resumeList}>
@@ -132,7 +126,7 @@ export default function AboutMePage() {
         </ul>
       </div>
 
-      {/* Awards */}
+     
       <div className={styles.resumeBlock}>
         <h3 className={styles.resumeSubheading}>🏆 Awards & Honors</h3>
         <ul className={styles.resumeList}>
@@ -146,7 +140,7 @@ export default function AboutMePage() {
       </div>
     </div>
   </div>
-</section>
+</section> */}
       </div>
     </Layout>
   );

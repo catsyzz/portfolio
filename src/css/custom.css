@@ -18,10 +18,18 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 0, 0.1);
 }
 
-body {
-  font-family: 'Inter', sans-serif;
+
+.body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+   font-family: 'Inter', sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-light);
+}
+
+/* For modern browsers */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Navbar */

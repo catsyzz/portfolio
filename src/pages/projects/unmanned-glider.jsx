@@ -25,7 +25,7 @@ export default function GliderSummary() {
           <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}>
             <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
               <iframe
-                src="about:blank"
+                src="https://www.modelo.io/embedded/1980702263075966976?viewport=true&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false&c_at0=-298.7323283214191&c_at1=223.81620184741223&c_at2=70.47848622164929&c_theta=-1.1606981633974398&c_phi=0.20693292519943385&c_dis=950.1280293119571"
                 title="Glider CAD / 3D"
                 frameBorder="0"
                 allowFullScreen
