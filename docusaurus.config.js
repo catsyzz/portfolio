@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/deweyd.ico',
 
   url: 'https://catsyzz.me',
-  baseUrl: '/portfolio',
+  baseUrl: '/',
 
   organizationName: 'catsyzz',
   projectName: 'portfolio',
