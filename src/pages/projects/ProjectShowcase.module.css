@@ -96,3 +96,12 @@
   margin-top: -1rem;
   margin-bottom: 2rem;
 }
+
+summary.subheading {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+summary.subheading:hover {
+  color: #ff0055;
+}

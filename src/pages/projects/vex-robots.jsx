@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './ProjectShowcase.module.css';
+import CodeBlock from '@theme/CodeBlock';
 
 export default function vexRobots() {
   return (
@@ -31,6 +32,96 @@ export default function vexRobots() {
          <p className={styles.modeloCaption}>
         <em>Example of a fully designed CAD robot I designed using Inventor</em>
       </p>
+
+<div style={{ height: '2rem' }}></div>
+   
+      <div className="gridBlock">
+      <details>
+        <summary className="subheading">ODOM.cpp — Live position updating function()</summary>
+        <pre className="sectionText" style={{ overflowX: 'auto', whiteSpace: 'pre-wrap', wordBreak: 'break-word', marginTop: '1rem' }}>
+          <code>
+    {`void Odom::update_position(float ForwardTracker_position, float SidewaysTracker_position, float orientation_deg){
+      float Forward_delta = ForwardTracker_position - this->ForwardTracker_position;
+      float Sideways_delta = SidewaysTracker_position - this->SideWaysTracker_position;
+      this->ForwardTracker_position = ForwardTracker_position;
+      this->SideWaysTracker_position = SidewaysTracker_position;
+
+      float orientation_rad = to_rad(orientation_deg);
+      float prev_orientation_rad = to_rad(this->orientation_deg);
+      float orientation_delta_rad = orientation_rad - prev_orientation_rad;
+      this->orientation_deg = orientation_deg;
+
+      float local_X_position, local_Y_position;
+      if (orientation_delta_rad == 0) {
+        local_X_position = Sideways_delta;
+        local_Y_position = Forward_delta;
+      } else {
+        local_X_position = 2 * sin(orientation_delta_rad / 2) * ((Sideways_delta / orientation_delta_rad) + SidewaysTracker_center_distance);
+        local_Y_position = 2 * sin(orientation_delta_rad / 2) * ((Forward_delta / orientation_delta_rad) + ForwardTracker_center_distance);
+      }
+
+      float local_polar_angle, local_polar_length;
+      if (local_X_position == 0 && local_Y_position == 0){
+        local_polar_angle = 0;
+        local_polar_length = 0;
+      } else {
+        local_polar_angle = atan2(local_Y_position, local_X_position);
+        local_polar_length = sqrt(pow(local_X_position, 2) + pow(local_Y_position, 2));
+      }
+
+      float global_polar_angle = local_polar_angle - prev_orientation_rad - (orientation_delta_rad / 2);
+      float X_position_delta = local_polar_length * cos(global_polar_angle);
+      float Y_position_delta = local_polar_length * sin(global_polar_angle);
+
+      X_position += X_position_delta;
+      Y_position += Y_position_delta;
+    }`}
+          </code>
+        </pre>
+      </details>
+    </div>
+
+         <div style={{ height: '2rem' }}></div>
+
+        <div className="gridBlock">
+          <details>
+            <summary className="subheading">PID.h -- PID controller class header file for implementing PID control loops in robot movement and mechanisms.</summary>
+            <pre className="sectionText" style={{ overflowX: 'auto', whiteSpace: 'pre-wrap', wordBreak: 'break-word', marginTop: '1rem' }}>
+              <code>
+        {`#pragma once
+        #include "vex.h"
+
+        class PID {
+        public:
+          float error = 0;
+          float kp = 0;
+          float ki = 0;
+          float kd = 0;
+          float starti = 0;
+          float settle_error = 0;
+          float settle_time = 0;
+          float timeout = 0;
+          float accumulated_error = 0;
+          float previous_error = 0;
+          float output = 0;
+          float time_spent_settled = 0;
+          float time_spent_running = 0;
+          float update_period = 10;
+
+          PID(float error, float kp, float ki, float kd, float starti);
+          PID(float error, float kp, float ki, float kd, float starti, float settle_error, float settle_time, float timeout);
+          PID(float error, float kp, float ki, float kd, float starti, float settle_error, float settle_time, float timeout, float update_period);
+
+          float compute(float error);
+          bool is_settled();
+        };`}
+              </code>
+            </pre>
+          </details>
+          <div className="smallMuted"> </div>
+        </div>
+
+         
 
        <div className={styles.gridBlock}>
           <p className={styles.sectionText}>

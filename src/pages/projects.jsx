@@ -57,7 +57,7 @@ export default function Projects() {
                 <img src="/img/williamsWing.jpg" alt="Formula 1 Wing iterations" className={styles.cardImage} />
                 <div className={styles.title}>Formula 1 Car Front Wing</div>
                 <div className={styles.description}>
-                  Designed and tested front and back wings for a mock Formula 1 car and tested aertodynamics using FEA and Ansys.
+                  Designed and tested front and back wings for a mock Formula 1 car and tested aerodynamics using FEA and Ansys.
                 </div>
                 <div className={styles.dates}>January 2023 – May 2023</div>
               </Link>
