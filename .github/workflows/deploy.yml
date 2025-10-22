@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/deploy.yml'
-      - 'website/'
+      - 'website/**'
   pull_request:
 
 jobs:
@@ -19,25 +19,23 @@ jobs:
     defaults:
       run:
         working-directory: website
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Setup Node
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Node 20 is LTS and fully supported
+          node-version: '20'
 
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "YARN_CACHE_DIR=$(yarn cache dir)" >> "${GITHUB_OUTPUT}"
-
-      - name: Cache dependencies
+      - name: Cache Yarn dependencies
         uses: actions/cache@v4
         with:
-          path: ${{ steps.yarn-cache.outputs.YARN_CACHE_DIR }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
+          path: ~/.yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-website-
+            ${{ runner.os }}-yarn-
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -46,14 +44,14 @@ jobs:
         run: yarn build
 
       - name: Disable Jekyll
-        run: touch ./build/.nojekyll
+        run: touch build/.nojekyll
 
       - name: Set custom domain
-        run: echo "catsyzz.me" > ./build/CNAME
+        run: echo "catsyzz.me" > build/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website/build
+          publish_dir: build
