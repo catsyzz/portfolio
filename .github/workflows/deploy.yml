@@ -6,8 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/deploy.yml'
-      - 'website/**'
-  pull_request:
+      - '**'
 
 jobs:
   deploy:
@@ -16,9 +15,6 @@ jobs:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    defaults:
-      run:
-        working-directory: website
 
     steps:
       - name: Checkout repository
