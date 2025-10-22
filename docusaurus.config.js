@@ -12,7 +12,7 @@ const config = {
   },
 
   url: 'https://catsyzz.me',
-  baseUrl: '/', // Change to '/' if deploying to root of custom domain
+  baseUrl: '/portfolio', // Change to '/' if deploying to root of custom domain
 
   organizationName: 'catsyzz',
   projectName: 'portfolio',
