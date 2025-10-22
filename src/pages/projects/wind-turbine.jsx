@@ -41,7 +41,7 @@ export default function WindTurbineSummary() {
         {/* 🖼 Progress Images */}
         <div className={styles.progressRow}>
           <div className={styles.progressCard}>
-            <img src="/img/wind-turbine/build-01.jpg" alt="Blade prototype" className={styles.progressImage} />
+            <img src="portfolio/img/wind-turbine/build-01.jpg" alt="Blade prototype" className={styles.progressImage} />
             <div className={styles.smallMuted}>Initial blade prototype with NACA profile</div>
           </div>
 

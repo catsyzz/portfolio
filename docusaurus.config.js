@@ -7,21 +7,20 @@ const config = {
   tagline: '',
   favicon: 'img/deweyd.ico',
 
-  future: {
-    v4: true,
-  },
-
   url: 'https://catsyzz.me',
-  baseUrl: '/portfolio', // Change to '/' if deploying to root of custom domain
+  baseUrl: '/portfolio',
 
   organizationName: 'catsyzz',
   projectName: 'portfolio',
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
-  // onBrokenLinks: 'throw',
-  // onBrokenMarkdownLinks: 'warn',
-    
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  plugins: [
+    process.env.NODE_ENV !== 'production' && '@docusaurus/plugin-debug',
+  ].filter(Boolean),
 
   i18n: {
     defaultLocale: 'en',
