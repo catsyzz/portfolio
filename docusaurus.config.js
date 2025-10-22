@@ -19,8 +19,8 @@ const config = {
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  // onBrokenLinks: 'throw',
+  // onBrokenMarkdownLinks: 'warn',
     
 
   i18n: {
