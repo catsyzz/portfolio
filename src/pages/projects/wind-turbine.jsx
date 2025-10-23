@@ -12,8 +12,7 @@ export default function WindTurbineSummary() {
         {/* 📘 Summary Block */}
         <div className={styles.centeredBlock}>
           <p className={styles.sectionText}>
-            This project explores the design and development of a small-scale wind turbine optimized for low wind conditions. Blade geometry was modeled using NACA airfoils, and the system included a custom gearbox and Arduino-based monitoring. The goal was to balance theoretical modeling with real-world testing and iterative refinement.
-          </p>
+            Explored aerodynamic principles through the design of a small-scale wind turbine for low-wind environments. Researched NREL airfoil families to understand how blade geometry affects lift, drag, and stall behavior. Applied insights from academic studies and NASA resources to select and model an efficient blade profile, deepening my understanding of airfoil performance, twist angles, and rotational stability.   </p>
         </div>
 
                 {/* 🖼 CAD Viewer Section */}
@@ -22,7 +21,7 @@ export default function WindTurbineSummary() {
             <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}>
                 <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
                 <iframe
-                    src="https://www.modelo.io/embedded/1978199812340015104?viewport=false&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false"
+                    src="https://www.modelo.io/embedded/1981388616441880576?viewport=true&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false&c_at0=62.88646657112986&c_at1=3.5560000621808285&c_at2=54.56614262703806&c_theta=-1.4630981633974494&c_phi=-0.060367074800567876&c_dis=164.74970977400494"
                     style={{ width: '100%', height: '100%' }}
                     frameBorder="0"
                     allowFullScreen
@@ -41,8 +40,8 @@ export default function WindTurbineSummary() {
         {/* 🖼 Progress Images */}
         <div className={styles.progressRow}>
           <div className={styles.progressCard}>
-            <img src="portfolio/img/wind-turbine/build-01.jpg" alt="Blade prototype" className={styles.progressImage} />
-            <div className={styles.smallMuted}>Initial blade prototype with NACA profile</div>
+            <img src="/img/Screenshot 2025-10-23 025837.png" alt="Blade prototype" className={styles.progressImage} />
+            <div className={styles.smallMuted}>Initial blade prototype with NREL profile</div>
           </div>
 
           <div className={styles.progressCard}>
@@ -56,7 +55,7 @@ export default function WindTurbineSummary() {
             <iframe
                
             src="/files/Glider Project Group 15 (2).pdf"
-            title="Dom's Resume"
+            title="Dom's research paper"
             className={styles.pdfViewer}          
             />
             </div>
@@ -71,9 +70,9 @@ export default function WindTurbineSummary() {
             <div className={styles.gridBlockInner}>
               <h2 className={styles.subheading}>Highlights</h2>
               <p className={styles.listText}>
-                • Blade design based on NACA 4412 airfoil;<br />
-                • Custom planetary gearbox for torque amplification;<br />
-                • Arduino-based RPM and voltage monitoring system.
+                • Blade design based on NREL S807 airfoil;<br />
+                • Custom Tower design for turbine with flow testing through SOLIDWORKS<br />
+                • Static electricity generation testing under variable wind conditions (under a fan).
               </p>
             </div>
           </div>
@@ -93,7 +92,11 @@ export default function WindTurbineSummary() {
             <div className={styles.gridBlockInner}>
               <h2 className={styles.subheading}>Collaborators</h2>
               <ul className={styles.collabList}>
-                <li className={styles.listText}>Cherry — Assisted with CAD modeling and sensor integration</li>
+                <li className={styles.listText}>Rowan</li>
+                <li className={styles.listText}>Nicole</li>
+                <li className={styles.listText}>Nick</li>
+                <li className={styles.listText}>Josh</li>
+                <li className={styles.listText}>Wendy</li>
               </ul>
             </div>
           </div>

@@ -6,7 +6,7 @@ export default function WingSummary() {
   return (
     <Layout title="Formula 1 Wing Development">
       <main className={styles.pageWrapper}>
-        <h1 className={styles.heading}>Formula 1 Front Wing Development</h1>
+        <h1 className={styles.heading}>Formula 1 Wing Development</h1>
        
         {/* Centered summary block */}
         <div className={styles.centeredBlock}>
@@ -76,7 +76,7 @@ export default function WingSummary() {
             <div className={styles.gridBlockInner}>
               <h2 className={styles.subheading}>Highlights</h2>
               <p className={styles.listText}>
-                • Used Solidworkds to develop design;<br />
+                • Used Solidworks to develop design based on Williams F1 front and back wings;<br />
                 • Gained exprience in surface modeling and flow trajectories and flow simulation through solidworks<br />
                 • Tested multiple iterations and made decisions based on data.
               </p>

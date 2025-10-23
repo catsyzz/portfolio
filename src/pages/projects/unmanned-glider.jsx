@@ -7,9 +7,9 @@ export default function GliderSummary() {
     <Layout title="Unmanned Glider Design">
       <main className={styles.pageWrapper}>
         <h1 className={styles.heading}>Unmanned Glider Design</h1>
-        <p className={styles.bio}>
+        {/* <p className={styles.bio}>
           Lightweight glider built from balsa, foam, and 3D printed components — optimized for stability, modularity, and hand-launch testing.
-        </p>
+        </p> */}
 
         {/* 📘 Summary Block */}
         <div className={styles.centeredBlock}>
@@ -43,12 +43,12 @@ export default function GliderSummary() {
         {/* 🖼 Progress Images */}
         <div className={styles.progressRow}>
           <div className={styles.progressCard}>
-            <img src="/img/glider/build-01.jpg" alt="Initial frame assembly" className={styles.progressImage} />
+            <img src="/img/gliderV1.png" alt="Initial frame assembly" className={styles.progressImage} />
             <div className={styles.smallMuted}>Initial balsa frame and wing layout in cad</div>
           </div>
 
           <div className={styles.progressCard}>
-            <img src="/img/glider/build-02.jpg" alt="Final glider with foam shaping" className={styles.progressImage} />
+            <img src="/img/build-02.jpg" alt="Final glider with foam shaping" className={styles.progressImage} />
             <div className={styles.smallMuted}>Final glider with foam shaping and 3D printed mounts</div>
           </div>
         </div>
