@@ -116,3 +116,53 @@ summary.subheading:hover {
   margin-bottom: 1.5rem;
   font-style: italic;
 }
+/* 🎛 Dropdown Button */
+.dropdownToggle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.05rem;
+  color: #ff66cc;
+  background-color: transparent;
+  border: 2px solid rgba(255, 0, 100, 0.08);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.08);
+}
+
+.dropdownToggle:hover {
+  color: #ff0055;
+  box-shadow: 0 0 14px rgba(255, 0, 100, 0.12);
+  transform: scale(1.01);
+}
+
+/* ▼ Arrow Indicator */
+.dropdownArrow {
+  float: right;
+  font-size: 0.9rem;
+  color: #bfc0c0;
+}
+
+/* 📦 Dropdown Content */
+.dropdownContent {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #0b0b0b;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.08);
+  animation: fadeIn 0.3s ease;
+}
+
+/* ✨ Smooth Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
