@@ -25,6 +25,15 @@ export default function Projects() {
                 <div className={styles.dates}>March 2024 – July 2024</div>
               </Link>
 
+             <Link to="/projects/unmanned-glider" className={styles.card}>
+                <img src="/img/gliderV1.png" alt="Glider Design" className={styles.cardImage} />
+                <div className={styles.title}>Glider Design</div>
+                <div className={styles.description}>
+                  Learned aerodynamics and flight mechanics by designing and building an unmanned glider from scratch, including CAD modeling, structural analysis, and flight testing.
+                </div>
+                <div className={styles.dates}>August 2025 – October 2025</div>
+              </Link>
+
           
                <Link to="/projects/guitar-hero-modding" className={styles.card}>
                 <img src="/img/ghs1.jpg" alt="Guitar Hero Modding" className={styles.cardImage} />
@@ -44,15 +53,7 @@ export default function Projects() {
           <div className={styles.column}>
             <h2 className={styles.columnHeading}>Research/Professional Projects</h2>
             <div className={styles.cardGrid}>
-              <Link to="/projects/unmanned-glider" className={styles.card}>
-                <img src="/img/gliderV1.png" alt="Glider Design" className={styles.cardImage} />
-                <div className={styles.title}>Glider Design</div>
-                <div className={styles.description}>
-                  Learned aerodynamics and flight mechanics by designing and building an unmanned glider from scratch, including CAD modeling, structural analysis, and flight testing.
-                </div>
-                <div className={styles.dates}>August 2025 – October 2025</div>
-              </Link>
-
+            
               <Link to="/projects/formula-1-car-wings" className={styles.card}>
                 <img src="/img/williamsWing.jpg" alt="Formula 1 Wing iterations" className={styles.cardImage} />
                 <div className={styles.title}>Formula 1 Car Front Wing</div>

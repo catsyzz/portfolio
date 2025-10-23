@@ -22,7 +22,7 @@ export default function WingSummary() {
           <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}>
             <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
               <iframe
-                src="about:blank"
+                src="https://www.modelo.io/embedded/1981264768290557952?viewport=true&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false&c_at0=903.4184681177139&c_at1=367.8487663269043&c_at2=1894.2820434570312&c_theta=1.0236018366025486&c_phi=0.3884195997410013&c_dis=2954.8036005873005"
                 title="Wing CAD / 3D"
                 frameBorder="0"
                 allowFullScreen
@@ -41,7 +41,7 @@ export default function WingSummary() {
           <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}>
             <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}>
               <iframe
-                src="about:blank"
+                src="https://www.modelo.io/embedded/1981286042057400320?viewport=true&autoplay=true&autorotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&showFullScreen=false&showLogo=false&showUploadModels=false&c_at0=375.0000110351575&c_at1=663.7474365234375&c_at2=321.49995000000126&c_theta=2.835301836602552&c_phi=-1.366580400258999&c_dis=1773.466194323021"
                 title="Wing CAD / 3D"
                 frameBorder="0"
                 allowFullScreen
@@ -59,13 +59,13 @@ export default function WingSummary() {
         {/* Iteration thumbnails and FEA snapshots */}
         <div className={styles.progressRow}>
           <div className={styles.progressCard}>
-            <img src="/img/wing/iteration-01.jpg" alt="Wing iteration 1" className={styles.progressImage} />
-            <div className={styles.smallMuted}>Concept geometry and initial profile</div>
+            <img src="/img/Flow Trajectories Front Wing.png" alt="Wing iteration 1" className={styles.progressImage} />
+            <div className={styles.smallMuted}>Flow Simulation using Solidworks for front wing</div>
           </div>
 
           <div className={styles.progressCard}>
-            <img src="/img/wing/iteration-02.jpg" alt="Wing iteration 2" className={styles.progressImage} />
-            <div className={styles.smallMuted}>Refined section shapes and endplate experiments</div>
+            <img src="/img/Flow Trajectories Back Wing.gif" alt="Wing iteration 2" className={styles.progressImage} />
+            <div className={styles.smallMuted}>Flow Simulation using Solidworks for back wing</div>
           </div>
         </div>
 
@@ -77,7 +77,7 @@ export default function WingSummary() {
               <h2 className={styles.subheading}>Highlights</h2>
               <p className={styles.listText}>
                 • Used Solidworkds to develop design;<br />
-                • Gained exprience in surface modeling and FEA Analaysis;<br />
+                • Gained exprience in surface modeling and flow trajectories and flow simulation through solidworks<br />
                 • Tested multiple iterations and made decisions based on data.
               </p>
             </div>

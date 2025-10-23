@@ -83,64 +83,7 @@ export default function AboutMePage() {
           </div>
         </div>
 
-
-       {/* Divider */}
 <hr className={styles.sectionDivider} />
-{/* 
-
-<section className={styles.resumeSection}>
-  <h2 className={styles.resumeHeading}>Professional Summary</h2>
-
-  <div className={styles.resumeGrid}>
-    <div className={styles.resumeColumn}>
-     
-      <div className={styles.resumeBlock}>
-        <h3 className={styles.resumeSubheading}>🎓 Education</h3>
-        <ul className={styles.resumeList}>
-          <li><strong>UC Berkeley</strong> — B.S. Mechanical Engineering, Regents Scholar (Expected 2028)</li>
-          <li><strong>Memberships</strong>: HES - Hispanic Engineers and Scientists, SHPE - Society of Hispanic Professional Engineers, UAVs @ Berkeley, BEAM - Berkeley Engineers and Mentors, Regents and Chancellor's Scholar Association</li>
-        </ul>
-      </div>
-
-      
-      <div className={styles.resumeBlock}>
-        <h3 className={styles.resumeSubheading}>🔬 Research</h3>
-        <ul className={styles.resumeList}>
-          <li><strong>Autonomous Vehicles Lab (UCSD)</strong> — GPS-guided ASV for lake data collection</li>
-        </ul>
-      </div>
-    </div>
-
- 
-    <div className={styles.resumeColumn}>
-    
-      <div className={styles.resumeBlock}>
-        <h3 className={styles.resumeSubheading}>🛠 Experience</h3>
-        <ul className={styles.resumeList}>
-          <li><strong>EZ Robotics</strong> — Co-Founder & Mentor for Vex Mentoring (2023–Present)</li>
-          <li><strong>8301D Dewey</strong> — Mechanical + Software Lead, CEO (2015–2025)</li>
-          <li><strong>Qualcomm Inc.</strong> — Curriculum Engineer & Program Lead (2021–2024)</li>
-          <li><strong>Private Tutor</strong> — AP Math, History, and CS Tutor (2022–2024)</li>
-          <li><strong>VEX Mentoring</strong> — CAD & Design Workshops for 50+ teams</li>
-          <li><strong>Integrated Sports District Coordinator</strong> — Inclusive sports for students with disabilities (2020-2025)</li>
-        </ul>
-      </div>
-
-     
-      <div className={styles.resumeBlock}>
-        <h3 className={styles.resumeSubheading}>🏆 Awards & Honors</h3>
-        <ul className={styles.resumeList}>
-          <li><strong>Regents & Chancellor’s Scholar</strong> — UC Berkeley</li>
-          <li><strong>VEX Design Award</strong> — Highest award for mechanical design and documentation at the World Championships (2022-2024)</li>
-          <li><strong>San Diego Robotic Engineer & Science Student of the Year</strong> (2022-2025)</li>
-          <li><strong>SHPE Jr. Chapter Founder</strong></li>
-          <li><strong>COSMOS Research Recognition</strong> — Autonomous Boat Project</li>
-          <li><strong>VEX League Champion</strong> — 2023, 2024</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section> */}
       </div>
     </Layout>
   );
