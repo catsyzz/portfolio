@@ -3,67 +3,86 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 96px; /* ~1in side margins */
+  padding: 2rem 96px;
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid rgba(255, 0, 100, 0.3); /* outer border only */
-  border-radius: 16px;
+  border: 2px solid rgba(255, 0, 100, 0.08);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(10,10,10,0.98) 0%, rgba(6,6,6,0.96) 100%);
+  box-sizing: border-box;
 }
 
 /* 🟥 Title */
 .heading {
   font-family: 'Orbitron', sans-serif;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #ff0055;
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 /* 🧠 Bio */
 .bio {
-  font-size: 1.2rem;
-  color: #ccc;
+  font-size: 1.05rem;
+  color: #cfcfcf;
   text-align: center;
-  margin-bottom: 2rem;
-  max-width: 800px;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
 }
 
-/* 🔥 Glowing Block Style — restored to older format */
+/* 🔥 Glowing Block Style */
 .gridBlock {
-  background-color: #0d0d0d;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #ff4f4f;
-  padding: 2rem;
-  margin: 2rem 0;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.2s ease;
   text-align: left;
-  transition: box-shadow 0.3s ease;
 }
 
 .gridBlock:hover {
-  box-shadow: 0 0 20px #ff4f4f;
+  box-shadow: 0 0 14px rgba(255, 0, 100, 0.12);
+}
+
+.gridBlockInner {
+  background-color: #0b0b0b;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.08);
+  height: 100%;
 }
 
 .sectionText {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
-  color: #f0f0f0;
-  text-align: left;
+  color: #dedede;
+  margin: 0;
 }
 
 /* 🧩 Grid Section Layout */
 .gridSection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.25rem;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .subheading {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-  color: #ff4f4f;
-  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  color: #ff66cc;
+  margin: 0 0 0.5rem 0;
+}
+
+summary.subheading {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+summary.subheading:hover {
+  color: #ff0055;
 }
 
 /* 🖼 Modelo Viewer */
@@ -79,7 +98,7 @@
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 12px #ff4f4f;
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.08);
 }
 
 .modeloIframe {
@@ -91,17 +110,9 @@
 /* 📝 CAD Caption */
 .modeloCaption {
   text-align: center;
-  font-size: 1rem;
-  color: #ccc;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-}
-
-summary.subheading {
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-summary.subheading:hover {
-  color: #ff0055;
+  font-size: 0.98rem;
+  color: #bfc0c0;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
